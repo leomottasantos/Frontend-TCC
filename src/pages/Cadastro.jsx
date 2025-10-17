@@ -85,7 +85,7 @@ const Cadastro = () => {
       <div className="cadastro-card">
         <div className="cadastro-header">
           <h2 className="cadastro-title">
-            Criar Conta - FitConnect
+            Criar Conta - TrainMe
           </h2>
           <p className="cadastro-subtitle">
             Comece sua transformação hoje mesmo

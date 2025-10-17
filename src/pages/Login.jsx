@@ -27,7 +27,7 @@ const Login = () => {
       <div className="login-card">
         <div className="login-header">
           <h2 className="login-title">
-            FitConnect
+            TrainMe
           </h2>
           <p className="login-subtitle">
             Sua jornada fitness começa aqui

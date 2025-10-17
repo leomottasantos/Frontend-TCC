@@ -27,7 +27,7 @@ const DashboardAluno = () => {
 		<div className="dashboard-container">
 			<aside className="dashboard-sidebar">
 				<div className="sidebar-header">
-					<h2>FitConnect</h2>
+					<h2>TrainMe</h2>
 				</div>
 						<nav className="sidebar-nav">
 							<ul>

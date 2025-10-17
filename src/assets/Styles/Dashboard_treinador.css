@@ -1,0 +1,163 @@
+/* Dashboard_treinador.css */
+
+.treinador-container {
+	display: flex;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.treinador-sidebar {
+	width: 240px;
+	background: #1f2336;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 1rem;
+	box-shadow: 2px 0 16px rgba(0,0,0,0.12);
+}
+.sidebar-header h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+.sidebar-nav ul {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+.sidebar-nav li, .sidebar-nav a {
+	display: block;
+	padding: 0.75rem 1rem;
+	margin-bottom: 0.5rem;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 500;
+	color: #cbd5e0;
+	text-decoration: none;
+	transition: background 0.2s, color 0.2s;
+}
+.sidebar-nav li.active, .sidebar-nav a:hover {
+	background: #667eea;
+	color: #fff;
+}
+
+.treinador-main {
+	flex: 1;
+	padding: 2.5rem 3rem;
+	background: #f7fafc;
+	border-radius: 0 20px 20px 0;
+	box-shadow: 0 8px 32px rgba(102,126,234,0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.treinador-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.treinador-header h1 {
+	font-size: 1.8rem;
+	color: #1a202c;
+	margin-bottom: 0.25rem;
+}
+.treinador-header p {
+	color: #718096;
+}
+.header-actions {
+	display: flex;
+	gap: 0.75rem;
+}
+.btn {
+	padding: 0.6rem 1rem;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn.primario {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: #fff;
+}
+.btn.secundario {
+	background: #edf2f7;
+	color: #1a202c;
+}
+.btn:hover { opacity: 0.95; }
+
+.kpis {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+.kpi-card {
+	background: #fff;
+	border-radius: 12px;
+	padding: 1rem;
+	box-shadow: 0 2px 12px rgba(102,126,234,0.08);
+}
+.kpi-label { color: #718096; font-weight: 600; }
+.kpi-value { font-size: 1.6rem; font-weight: 800; color: #1a202c; }
+
+.conteudo-grid {
+	display: grid;
+	grid-template-columns: 1.2fr 1fr 1fr;
+	gap: 1rem;
+}
+.card {
+	background: #fff;
+	border-radius: 12px;
+	padding: 1rem;
+	box-shadow: 0 2px 12px rgba(102,126,234,0.08);
+}
+.card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.75rem;
+}
+.link-btn {
+	background: transparent;
+	border: none;
+	color: #667eea;
+	cursor: pointer;
+	font-weight: 600;
+}
+.alunos-lista { list-style: none; padding: 0; margin: 0; }
+.alunos-lista li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #edf2f7;
+}
+.aluno-info { display: flex; flex-direction: column; }
+.aluno-info strong { color: #1a202c; }
+.aluno-info span { color: #718096; font-size: 0.9rem; }
+.aluno-progresso { display: flex; align-items: center; gap: 0.5rem; }
+.barra { width: 120px; height: 10px; background: #e2e8f0; border-radius: 6px; overflow: hidden; }
+.preenchimento { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); }
+
+.agenda-tabela { width: 100%; border-collapse: collapse; }
+.agenda-tabela th, .agenda-tabela td { text-align: left; padding: 0.6rem; border-bottom: 1px solid #edf2f7; }
+.agenda-tabela th { color: #667eea; font-weight: 700; }
+.status-confirmado td { color: #38a169; font-weight: 600; }
+.status-pendente td { color: #dd6b20; font-weight: 600; }
+.status-cancelado td { color: #e53e3e; font-weight: 600; }
+
+.solicitacoes-lista { list-style: none; padding: 0; margin: 0; }
+.solicitacoes-lista li { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 0; border-bottom: 1px solid #edf2f7; }
+.solicitacoes .data { color: #718096; font-size: 0.9rem; }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+	.kpis { grid-template-columns: repeat(2, 1fr); }
+	.conteudo-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+	.treinador-container { flex-direction: column; }
+	.treinador-sidebar { width: 100%; padding: 1rem; border-radius: 0 0 20px 20px; }
+	.treinador-main { padding: 1rem; border-radius: 0; }
+}
