@@ -4,6 +4,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Login from './pages/Login'
 import Cadastro from './pages/Cadastro'
+import DashboardAluno from './pages/Dashboard_aluno'
+import Perfil from './pages/Perfil'
 import './App.css'
 
 function App() {
@@ -37,14 +39,24 @@ function App() {
               <Link to="/cadastro" className="text-blue-600 hover:text-blue-700">
                 Ir para o Cadastro
               </Link>
+              <br />
+              <Link to="/dashboard" className="text-blue-600 hover:text-blue-700">
+                Ir para o Dashboard
+              </Link>
+              <br />
+              <Link to="/perfil" className="text-blue-600 hover:text-blue-700">
+                Ir para o Perfil
+              </Link>
             </div>
             <p className="read-the-docs">
               Click on the Vite and React logos to learn more
             </p>
           </div>
         } />
-        <Route path="/login" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
+  <Route path="/login" element={<Login />} />
+  <Route path="/cadastro" element={<Cadastro />} />
+  <Route path="/dashboard" element={<DashboardAluno />} />
+  <Route path="/perfil" element={<Perfil />} />
       </Routes>
     </Router>
   )
