@@ -51,20 +51,20 @@
   font-size: 1rem;
 }
 
-.cadastro-form {
+.cadastro-card .cadastro-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.form-section {
+.cadastro-card .form-section {
   background: #f7fafc;
   padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
 }
 
-.section-title {
+.cadastro-card .section-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #2d3748;
@@ -73,30 +73,30 @@
   border-bottom: 2px solid #667eea;
 }
 
-.form-group {
+.cadastro-card .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.25rem;
 }
 
-.form-group:last-child {
+.cadastro-card .form-group:last-child {
   margin-bottom: 0;
 }
 
-.form-group label {
+.cadastro-card .form-group label {
   font-size: 0.875rem;
   font-weight: 600;
   color: #4a5568;
   margin-bottom: 0.5rem;
 }
 
-.form-row {
+.cadastro-card .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.form-input {
+.cadastro-card .form-input {
   width: 100%;
   padding: 0.75rem 1rem;
   border: 2px solid #e2e8f0;
@@ -107,25 +107,25 @@
   color: #2d3748;
 }
 
-.form-input:focus {
+.cadastro-card .form-input:focus {
   outline: none;
   border-color: #667eea;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-.form-input::placeholder {
+.cadastro-card .form-input::placeholder {
   color: #a0aec0;
 }
 
-.form-input.input-error {
+.cadastro-card .form-input.input-error {
   border-color: #fc8181;
 }
 
-.form-input.input-error:focus {
+.cadastro-card .form-input.input-error:focus {
   box-shadow: 0 0 0 3px rgba(252, 129, 129, 0.1);
 }
 
-select.form-input {
+.cadastro-card select.form-input {
   cursor: pointer;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@ select.form-input {
   appearance: none;
 }
 
-.error-message {
+.cadastro-card .error-message {
   color: #e53e3e;
   font-size: 0.875rem;
   margin-top: 0.5rem;
@@ -144,15 +144,15 @@ select.form-input {
   gap: 0.25rem;
 }
 
-.error-message::before {
+.cadastro-card .error-message::before {
   content: "⚠";
 }
 
-.form-group-checkbox {
+.cadastro-card .form-group-checkbox {
   margin: 1rem 0;
 }
 
-.checkbox-label {
+.cadastro-card .checkbox-label {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
@@ -162,7 +162,7 @@ select.form-input {
   line-height: 1.5;
 }
 
-.checkbox-input {
+.cadastro-card .checkbox-input {
   margin-top: 0.25rem;
   width: 1.125rem;
   height: 1.125rem;
@@ -170,19 +170,19 @@ select.form-input {
   accent-color: #667eea;
 }
 
-.link {
+.cadastro-card .link {
   color: #667eea;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
-.link:hover {
+.cadastro-card .link:hover {
   color: #764ba2;
   text-decoration: underline;
 }
 
-.submit-button {
+.cadastro-card .submit-button {
   width: 100%;
   padding: 1rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -197,23 +197,23 @@ select.form-input {
   margin-top: 1rem;
 }
 
-.submit-button:hover {
+.cadastro-card .submit-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
 }
 
-.submit-button:active {
+.cadastro-card .submit-button:active {
   transform: translateY(0);
 }
 
-.login-link {
+.cadastro-card .login-link {
   text-align: center;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid #e2e8f0;
 }
 
-.login-link p {
+.cadastro-card .login-link p {
   color: #718096;
   font-size: 0.875rem;
 }
@@ -232,11 +232,11 @@ select.form-input {
     font-size: 1.5rem;
   }
 
-  .form-section {
+  .cadastro-card .form-section {
     padding: 1rem;
   }
 
-  .form-row {
+  .cadastro-card .form-row {
     grid-template-columns: 1fr;
   }
 }
@@ -250,11 +250,11 @@ select.form-input {
     font-size: 1.25rem;
   }
 
-  .section-title {
+  .cadastro-card .section-title {
     font-size: 1.125rem;
   }
 
-  .form-section {
+  .cadastro-card .form-section {
     padding: 0.75rem;
   }
 }

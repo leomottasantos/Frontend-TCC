@@ -76,7 +76,7 @@
 	grid-template-columns: repeat(4, 1fr);
 	gap: 1.5rem;
 }
-.info-card {
+.dashboard-main .info-card {
 	background: #fff;
 	border-radius: 12px;
 	box-shadow: 0 2px 12px rgba(102,126,234,0.08);
@@ -113,7 +113,7 @@
 	font-weight: 500;
 }
 
-.dashboard-treinos {
+.dashboard-main .dashboard-treinos {
 	background: #fff;
 	border-radius: 12px;
 	box-shadow: 0 2px 12px rgba(102,126,234,0.08);
@@ -148,7 +148,7 @@
 	font-weight: 500;
 }
 
-.dashboard-notificacoes {
+.dashboard-main .dashboard-notificacoes {
 	background: #fff;
 	border-radius: 12px;
 	box-shadow: 0 2px 12px rgba(102,126,234,0.08);

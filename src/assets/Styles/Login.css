@@ -37,11 +37,11 @@
     margin-top: 2rem;
 }
 
-.form-group {
+.login-container .form-group {
     margin-bottom: 1rem;
 }
 
-.form-input {
+.login-container .form-input {
     display: block;
     width: 100%;
     padding: 0.5rem 0.75rem;
@@ -52,31 +52,29 @@
     transition: all 0.2s;
 }
 
-.form-input:focus {
+.login-container .form-input:focus {
     outline: none;
-    ring: 2px;
-    ring-offset: 2px;
-    ring-color: #3b82f6;
     border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35);
 }
 
-.form-input::placeholder {
+.login-container .form-input::placeholder {
     color: #9ca3af;
 }
 
-.remember-forgot {
+.login-container .remember-forgot {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1.5rem;
 }
 
-.remember-me {
+.login-container .remember-me {
     display: flex;
     align-items: center;
 }
 
-.remember-checkbox {
+.login-container .remember-checkbox {
     height: 1rem;
     width: 1rem;
     color: #3b82f6;
@@ -84,13 +82,13 @@
     border-color: #d1d5db;
 }
 
-.remember-text {
+.login-container .remember-text {
     margin-left: 0.5rem;
     font-size: 0.875rem;
     color: #111827;
 }
 
-.forgot-link {
+.login-container .forgot-link {
     font-size: 0.875rem;
     font-weight: 500;
     color: #3b82f6;
@@ -98,11 +96,11 @@
     transition: color 0.2s;
 }
 
-.forgot-link:hover {
+.login-container .forgot-link:hover {
     color: #2563eb;
 }
 
-.login-button {
+.login-container .login-button {
     position: relative;
     width: 100%;
     display: flex;
@@ -118,35 +116,33 @@
     margin-top: 1.5rem;
 }
 
-.login-button:hover {
+.login-container .login-button:hover {
     background-color: #2563eb;
 }
 
-.login-button:focus {
+.login-container .login-button:focus {
     outline: none;
-    ring: 2px;
-    ring-offset: 2px;
-    ring-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35);
 }
 
-.signup-section {
+.login-container .signup-section {
     text-align: center;
     margin-top: 1.5rem;
 }
 
-.signup-text {
+.login-container .signup-text {
     font-size: 0.875rem;
     color: #6b7280;
 }
 
-.signup-link {
+.login-container .signup-link {
     font-weight: 500;
     color: #3b82f6;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.signup-link:hover {
+.login-container .signup-link:hover {
     color: #2563eb;
 }
 
