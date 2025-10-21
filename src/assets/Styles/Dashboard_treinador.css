@@ -161,3 +161,118 @@
 	.treinador-sidebar { width: 100%; padding: 1rem; border-radius: 0 0 20px 20px; }
 	.treinador-main { padding: 1rem; border-radius: 0; }
 }
+
+/* Dark Mode */
+.dark .treinador-container {
+	background: linear-gradient(135deg, #312e81 0%, #581c87 100%);
+}
+
+.dark .treinador-sidebar {
+	background: #0f1419;
+	box-shadow: 2px 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.dark .sidebar-header h2 {
+	color: #f3f4f6;
+}
+
+.dark .sidebar-nav li,
+.dark .sidebar-nav a {
+	color: #9ca3af;
+}
+
+.dark .sidebar-nav li.active,
+.dark .sidebar-nav a:hover {
+	background: #7c3aed;
+	color: #fff;
+}
+
+.dark .treinador-main {
+	background: #1f2937;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.dark .treinador-header h1 {
+	color: #f3f4f6;
+}
+
+.dark .treinador-header p {
+	color: #9ca3af;
+}
+
+.dark .treinador-main .btn.secundario {
+	background: #374151;
+	color: #e5e7eb;
+}
+
+.dark .kpi-card {
+	background: #374151;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .kpi-label {
+	color: #9ca3af;
+}
+
+.dark .kpi-value {
+	color: #e5e7eb;
+}
+
+.dark .card {
+	background: #374151;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .card h3 {
+	color: #f3f4f6;
+}
+
+.dark .link-btn {
+	color: #a78bfa;
+}
+
+.dark .alunos-lista li {
+	border-bottom-color: #4b5563;
+}
+
+.dark .aluno-info strong {
+	color: #e5e7eb;
+}
+
+.dark .aluno-info span {
+	color: #9ca3af;
+}
+
+.dark .barra {
+	background: #4b5563;
+}
+
+.dark .agenda-tabela th,
+.dark .agenda-tabela td {
+	border-bottom-color: #4b5563;
+	color: #d1d5db;
+}
+
+.dark .agenda-tabela th {
+	color: #a78bfa;
+}
+
+.dark .status-confirmado td {
+	color: #34d399;
+}
+
+.dark .status-pendente td {
+	color: #fbbf24;
+}
+
+.dark .status-cancelado td {
+	color: #f87171;
+}
+
+.dark .solicitacoes-lista li {
+	border-bottom-color: #4b5563;
+}
+
+.dark .solicitacoes .data {
+	color: #9ca3af;
+}

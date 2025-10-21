@@ -213,3 +213,105 @@
 		padding: 1rem 0.5rem;
 	}
 }
+
+/* Dark Mode */
+.dark .dashboard-container {
+	background: linear-gradient(135deg, #312e81 0%, #581c87 100%);
+}
+
+.dark .dashboard-sidebar {
+	background: #111827;
+	box-shadow: 2px 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.dark .sidebar-header h2 {
+	color: #f3f4f6;
+}
+
+.dark .sidebar-nav li {
+	color: #d1d5db;
+}
+
+.dark .sidebar-nav li.active,
+.dark .sidebar-nav li:hover {
+	background: #7c3aed;
+	color: #fff;
+}
+
+.dark .dashboard-main {
+	background: #1f2937;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.dark .dashboard-header h1 {
+	color: #f3f4f6;
+}
+
+.dark .dashboard-objetivo {
+	color: #a78bfa;
+}
+
+.dark .dashboard-main .info-card {
+	background: #374151;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .info-card h3 {
+	color: #a78bfa;
+}
+
+.dark .info-card p {
+	color: #e5e7eb;
+}
+
+.dark .progress-bar {
+	background: #4b5563;
+}
+
+.dark .progress-label {
+	color: #a78bfa;
+}
+
+.dark .dashboard-main .dashboard-treinos {
+	background: #374151;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .dashboard-treinos h2 {
+	color: #f3f4f6;
+}
+
+.dark .treinos-table th,
+.dark .treinos-table td {
+	border-bottom-color: #4b5563;
+	color: #d1d5db;
+}
+
+.dark .treinos-table th {
+	color: #a78bfa;
+}
+
+.dark .treino-concluido td {
+	color: #34d399;
+}
+
+.dark .treino-pendente td {
+	color: #f87171;
+}
+
+.dark .dashboard-main .dashboard-notificacoes {
+	background: #374151;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .dashboard-notificacoes h2 {
+	color: #f3f4f6;
+}
+
+.dark .dashboard-notificacoes ul {
+	color: #a78bfa;
+}
+
+.dark .dashboard-notificacoes li {
+	color: #d1d5db;
+}

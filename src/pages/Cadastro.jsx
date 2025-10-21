@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import DarkModeToggle from '../components/DarkModeToggle';
 import '../assets/Styles/Cadastro.css';
 
 const Cadastro = () => {
@@ -81,100 +82,100 @@ const Cadastro = () => {
   };
 
   return (
-    <div className="cadastro-container">
-      <div className="cadastro-card">
+    <div className="cadastro-container dark:from-indigo-950 dark:to-purple-950">
+      <div className="cadastro-card dark:bg-gray-800 dark:shadow-2xl">
         <div className="cadastro-header">
           <h2 className="cadastro-title">
             Criar Conta - TrainMe
           </h2>
-          <p className="cadastro-subtitle">
+          <p className="cadastro-subtitle dark:text-gray-400">
             Comece sua transformação hoje mesmo
           </p>
         </div>
         
         <form className="cadastro-form" onSubmit={handleSubmit}>
           {/* Informações Pessoais */}
-          <div className="form-section">
-            <h3 className="section-title">Informações Pessoais</h3>
+          <div className="form-section dark:bg-gray-700/50 dark:border-gray-600">
+            <h3 className="section-title dark:text-gray-100 dark:border-purple-500">Informações Pessoais</h3>
             
             <div className="form-group">
-              <label htmlFor="nomeCompleto">Nome Completo</label>
+              <label htmlFor="nomeCompleto" className="dark:text-gray-300">Nome Completo</label>
               <input
                 id="nomeCompleto"
                 name="nomeCompleto"
                 type="text"
-                className={`form-input ${errors.nomeCompleto ? 'input-error' : ''}`}
+                className={`form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500 ${errors.nomeCompleto ? 'input-error' : ''}`}
                 placeholder="Digite seu nome completo"
                 value={formData.nomeCompleto}
                 onChange={handleChange}
               />
-              {errors.nomeCompleto && <span className="error-message">{errors.nomeCompleto}</span>}
+              {errors.nomeCompleto && <span className="error-message dark:text-red-400">{errors.nomeCompleto}</span>}
             </div>
 
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email" className="dark:text-gray-300">Email</label>
               <input
                 id="email"
                 name="email"
                 type="email"
-                className={`form-input ${errors.email ? 'input-error' : ''}`}
+                className={`form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500 ${errors.email ? 'input-error' : ''}`}
                 placeholder="seu@email.com"
                 value={formData.email}
                 onChange={handleChange}
               />
-              {errors.email && <span className="error-message">{errors.email}</span>}
+              {errors.email && <span className="error-message dark:text-red-400">{errors.email}</span>}
             </div>
 
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="senha">Senha</label>
+                <label htmlFor="senha" className="dark:text-gray-300">Senha</label>
                 <input
                   id="senha"
                   name="senha"
                   type="password"
-                  className={`form-input ${errors.senha ? 'input-error' : ''}`}
+                  className={`form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500 ${errors.senha ? 'input-error' : ''}`}
                   placeholder="Mínimo 6 caracteres"
                   value={formData.senha}
                   onChange={handleChange}
                 />
-                {errors.senha && <span className="error-message">{errors.senha}</span>}
+                {errors.senha && <span className="error-message dark:text-red-400">{errors.senha}</span>}
               </div>
 
               <div className="form-group">
-                <label htmlFor="confirmarSenha">Confirmar Senha</label>
+                <label htmlFor="confirmarSenha" className="dark:text-gray-300">Confirmar Senha</label>
                 <input
                   id="confirmarSenha"
                   name="confirmarSenha"
                   type="password"
-                  className={`form-input ${errors.confirmarSenha ? 'input-error' : ''}`}
+                  className={`form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500 ${errors.confirmarSenha ? 'input-error' : ''}`}
                   placeholder="Confirme sua senha"
                   value={formData.confirmarSenha}
                   onChange={handleChange}
                 />
-                {errors.confirmarSenha && <span className="error-message">{errors.confirmarSenha}</span>}
+                {errors.confirmarSenha && <span className="error-message dark:text-red-400">{errors.confirmarSenha}</span>}
               </div>
             </div>
 
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="dataNascimento">Data de Nascimento</label>
+                <label htmlFor="dataNascimento" className="dark:text-gray-300">Data de Nascimento</label>
                 <input
                   id="dataNascimento"
                   name="dataNascimento"
                   type="date"
-                  className={`form-input ${errors.dataNascimento ? 'input-error' : ''}`}
+                  className={`form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 ${errors.dataNascimento ? 'input-error' : ''}`}
                   value={formData.dataNascimento}
                   onChange={handleChange}
                 />
-                {errors.dataNascimento && <span className="error-message">{errors.dataNascimento}</span>}
+                {errors.dataNascimento && <span className="error-message dark:text-red-400">{errors.dataNascimento}</span>}
               </div>
 
               <div className="form-group">
-                <label htmlFor="genero">Gênero</label>
+                <label htmlFor="genero" className="dark:text-gray-300">Gênero</label>
                 <select
                   id="genero"
                   name="genero"
-                  className="form-input"
+                  className="form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
                   value={formData.genero}
                   onChange={handleChange}
                 >
@@ -189,15 +190,15 @@ const Cadastro = () => {
           </div>
 
           {/* Informações de Treino */}
-          <div className="form-section">
-            <h3 className="section-title">Informações de Treino</h3>
+          <div className="form-section dark:bg-gray-700/50 dark:border-gray-600">
+            <h3 className="section-title dark:text-gray-100 dark:border-purple-500">Informações de Treino</h3>
             
             <div className="form-group">
-              <label htmlFor="objetivo">Objetivo Principal</label>
+              <label htmlFor="objetivo" className="dark:text-gray-300">Objetivo Principal</label>
               <select
                 id="objetivo"
                 name="objetivo"
-                className="form-input"
+                className="form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
                 value={formData.objetivo}
                 onChange={handleChange}
               >
@@ -211,11 +212,11 @@ const Cadastro = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="nivelAtividade">Nível de Atividade Física</label>
+              <label htmlFor="nivelAtividade" className="dark:text-gray-300">Nível de Atividade Física</label>
               <select
                 id="nivelAtividade"
                 name="nivelAtividade"
-                className="form-input"
+                className="form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
                 value={formData.nivelAtividade}
                 onChange={handleChange}
               >
@@ -230,13 +231,13 @@ const Cadastro = () => {
 
             <div className="form-row">
               <div className="form-group">
-                <label htmlFor="peso">Peso (kg)</label>
+                <label htmlFor="peso" className="dark:text-gray-300">Peso (kg)</label>
                 <input
                   id="peso"
                   name="peso"
                   type="number"
                   step="0.1"
-                  className="form-input"
+                  className="form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500"
                   placeholder="Ex: 70"
                   value={formData.peso}
                   onChange={handleChange}
@@ -244,12 +245,12 @@ const Cadastro = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="altura">Altura (cm)</label>
+                <label htmlFor="altura" className="dark:text-gray-300">Altura (cm)</label>
                 <input
                   id="altura"
                   name="altura"
                   type="number"
-                  className="form-input"
+                  className="form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500"
                   placeholder="Ex: 170"
                   value={formData.altura}
                   onChange={handleChange}
@@ -260,7 +261,7 @@ const Cadastro = () => {
 
           {/* Termos e Condições */}
           <div className="form-group-checkbox">
-            <label className="checkbox-label">
+            <label className="checkbox-label dark:text-gray-300">
               <input
                 type="checkbox"
                 name="termos"
@@ -269,19 +270,19 @@ const Cadastro = () => {
                 className="checkbox-input"
               />
               <span>
-                Eu aceito os <a href="#" className="link">termos e condições</a> e a <a href="#" className="link">política de privacidade</a>
+                Eu aceito os <a href="#" className="link dark:text-purple-400 dark:hover:text-purple-300">termos e condições</a> e a <a href="#" className="link dark:text-purple-400 dark:hover:text-purple-300">política de privacidade</a>
               </span>
             </label>
-            {errors.termos && <span className="error-message">{errors.termos}</span>}
+            {errors.termos && <span className="error-message dark:text-red-400">{errors.termos}</span>}
           </div>
 
-          <button type="submit" className="submit-button">
+          <button type="submit" className="submit-button dark:from-purple-600 dark:to-indigo-600 dark:hover:from-purple-700 dark:hover:to-indigo-700">
             Criar Conta
           </button>
 
-          <div className="login-link">
-            <p>
-              Já tem uma conta? <a href="/login" className="link">Faça login</a>
+          <div className="login-link dark:border-gray-700">
+            <p className="dark:text-gray-400">
+              Já tem uma conta? <a href="/login" className="link dark:text-purple-400 dark:hover:text-purple-300">Faça login</a>
             </p>
           </div>
         </form>

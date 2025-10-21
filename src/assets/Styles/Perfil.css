@@ -166,3 +166,53 @@
 		gap: 0.75rem;
 	}
 }
+
+/* Dark Mode */
+.dark .perfil-container {
+	background: linear-gradient(135deg, #312e81 0%, #581c87 100%);
+}
+
+.dark .perfil-card {
+	background: #1f2937;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.dark .perfil-title {
+	color: #a78bfa;
+}
+
+.dark .perfil-group label {
+	color: #d1d5db;
+}
+
+.dark .perfil-input {
+	background: #374151;
+	border-color: #4b5563;
+	color: #e5e7eb;
+}
+
+.dark .perfil-input:focus {
+	border-color: #8b5cf6;
+	background: #4b5563;
+}
+
+.dark .perfil-input:disabled {
+	background: #1f2937;
+	color: #6b7280;
+	border-color: #374151;
+}
+
+.dark .perfil-foto {
+	border-color: #8b5cf6;
+	background: #374151;
+	box-shadow: 0 4px 16px rgba(139, 92, 246, 0.2);
+}
+
+.dark .perfil-upload-icone {
+	background: #374151;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark .perfil-upload-icone:hover {
+	background: #4b5563;
+}

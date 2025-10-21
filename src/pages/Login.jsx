@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import DarkModeToggle from '../components/DarkModeToggle';
 import '../assets/Styles/Login.css';
 
 const Login = () => {
@@ -23,13 +24,13 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-card">
+    <div className="login-container dark:from-indigo-950 dark:to-purple-950">
+      <div className="login-card dark:bg-gray-800 dark:shadow-2xl">
         <div className="login-header">
-          <h2 className="login-title">
+          <h2 className="login-title dark:text-gray-100">
             TrainMe
           </h2>
-          <p className="login-subtitle">
+          <p className="login-subtitle dark:text-gray-400">
             Sua jornada fitness começa aqui
           </p>
         </div>
@@ -44,7 +45,7 @@ const Login = () => {
               name="email"
               type="email"
               required
-              className="form-input"
+              className="form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500"
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
@@ -60,7 +61,7 @@ const Login = () => {
               name="password"
               type="password"
               required
-              className="form-input"
+              className="form-input dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-500"
               placeholder="Senha"
               value={formData.password}
               onChange={handleChange}
@@ -77,13 +78,13 @@ const Login = () => {
                 checked={formData.rememberMe}
                 onChange={handleChange}
               />
-              <label htmlFor="remember-me" className="remember-text">
+              <label htmlFor="remember-me" className="remember-text dark:text-gray-300">
                 Lembrar-me
               </label>
             </div>
 
             <div>
-              <a href="#" className="forgot-link">
+              <a href="#" className="forgot-link dark:text-purple-400 dark:hover:text-purple-300">
                 Esqueceu sua senha?
               </a>
             </div>
@@ -92,16 +93,16 @@ const Login = () => {
           <div>
             <button
               type="submit"
-              className="login-button"
+              className="login-button dark:bg-purple-600 dark:hover:bg-purple-700"
             >
               Entrar
             </button>
           </div>
 
           <div className="signup-section">
-            <p className="signup-text">
+            <p className="signup-text dark:text-gray-400">
               Não tem uma conta?{' '}
-              <a href="#" className="signup-link">
+              <a href="#" className="signup-link dark:text-purple-400 dark:hover:text-purple-300">
                 Cadastre-se
               </a>
             </p>
